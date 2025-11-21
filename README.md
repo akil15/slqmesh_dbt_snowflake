@@ -6,24 +6,22 @@ I have created the following one:
 > % mkdir data_pipeline_sqlmesh
 
 Then issue the following commands to install SQLMesh with Snowflake as a target datawarehouse, meaning the datawarehouse which will contain the data we will be working with
-
-> % python3 -m venv .env
-
-> % source .env/bin/activate
-
-> % pip install "sqlmesh[web]"
-
-> % pip install "sqlmesh[snowflake]"
+```bash
+% python3 -m venv .env
+% source .env/bin/activate
+% pip install "sqlmesh[web]"
+% pip install "sqlmesh[snowflake]"
+```
 
 'Issue the following SQL commands in your Snowflake worksheet.
 'This will create the required variables like warehouse, database, role, user to be used during the execution of our models.
 ```sql
-> USE ROLE accountadmin;
-> CREATE WAREHOUSE demo_ask_wh WITH warehouse_size='xsmall';
-> CREATE DATABASE IF NOT EXISTS demo_ask_db;
-> CREATE ROLE IF NOT EXISTS demo_ask_role;
-> GRANT USAGE ON WAREHOUSE demo_ask_wh TO ROLE demo_ask_role;
-> GRANT OWNERSHIP ON DATABASE demo_ask_db TO ROLE demo_ask_role;
+USE ROLE accountadmin;
+CREATE WAREHOUSE demo_ask_wh WITH warehouse_size='xsmall';
+CREATE DATABASE IF NOT EXISTS demo_ask_db;
+CREATE ROLE IF NOT EXISTS demo_ask_role;
+GRANT USAGE ON WAREHOUSE demo_ask_wh TO ROLE demo_ask_role;
+GRANT OWNERSHIP ON DATABASE demo_ask_db TO ROLE demo_ask_role;
 GRANT ROLE demo_ask_role TO USER akilsalhab;
 ```
 >
