@@ -35,11 +35,15 @@ nano config.yaml
 ```
 You simply need to fill in the following parameters:
 ```json
-account: <<YOUR_SNOWFLAKE_ACCOUNT>>
-user: <<I_HAVE_MY_SNOWFLAKE_DEFAULT_USERNAME>>
-password: <<YOUR_USER_PASSWORD>>
-database: demo_ask_db
-warehouse: demo_ask_wh
+{
+...
+  account: <<YOUR_SNOWFLAKE_ACCOUNT>>
+  user: <<I_HAVE_MY_SNOWFLAKE_DEFAULT_USERNAME>>
+  password: <<YOUR_USER_PASSWORD>>
+  database: demo_ask_db
+  warehouse: demo_ask_wh
+...
+}
 ```
 
 
