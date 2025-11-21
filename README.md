@@ -34,7 +34,6 @@ Update the config.yaml file with the appropriate connection parameters - note th
 nano config.yaml
 ```
 You simply need to fill in the following parameters:
-```json
 {
 ...
   account: <<YOUR_SNOWFLAKE_ACCOUNT>>
@@ -44,6 +43,6 @@ You simply need to fill in the following parameters:
   warehouse: demo_ask_wh
 ...
 }
-```
+
 
 
