@@ -44,5 +44,11 @@ You simply need to fill in the following parameters:
 ...
 }
 
+After saving that file, you can enter the following command to ensure the connectivity is working:
+```bash
+% sqlmesh info
+```
+
+
 
 
