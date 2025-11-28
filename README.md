@@ -31,7 +31,7 @@ GRANT ROLE demo_ask_role TO USER akilsalhab;
 
 Update the config.yaml file with the appropriate connection parameters - note that upon issuing the latest config, you would have noticed that some elements have appeared in data_pipeline_mesh repository
 ```bash
-nano config.yaml
+% nano config.yaml
 ```
 You simply need to fill in the following parameters:
 {
